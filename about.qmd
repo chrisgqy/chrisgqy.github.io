@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Chris "
 ---
 
-About this site
+Hi I am Chris. This is part of my DSCI 521 Lab 2 assignment. 
