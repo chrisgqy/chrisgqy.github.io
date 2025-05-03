@@ -1,1 +1,48 @@
 /* css styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, Sans-Serif;
+}
+
+.intro-section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+h2 {
+  margin: 0;
+  font-size: 10rem; /* Slightly larger font size for secondary title */
+}
+
+h1 {
+  font-size: 5rem; /* Larger font size for the main title */
+  margin: 0;
+}
+
+.content-section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2rem; /* Slightly larger font size for secondary title */
+}
+
+p {
+  margin-top: 1em;
+  font-size: 1.2rem;
+  max-width: 1000px; /* Optional: to maintain content width */
+}

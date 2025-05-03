@@ -14,10 +14,10 @@ format:
   html:
     theme: cyborg
     mainfont: arial
-    fontsize: 1.5rem
+    fontsize: 1rem
     monofont: courier new
     css: styles.css
-    toc: true
+    toc: false
 
 
 

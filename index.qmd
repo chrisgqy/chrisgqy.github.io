@@ -1,11 +1,9 @@
----
-title: "chrisgqy.github.io"
----
+<div class="intro-section">
+  <h0>Open Writing Evaluation Canada<h0>
+  <h1></h1>
+</div>
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
-```
+<div class="content-section">
+  <h2>Al-based GEC with Linguistically-Informed Error Typology</h2>
+  <p>Our goal: revolutionze Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
+</div>
