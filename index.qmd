@@ -1,9 +1,17 @@
+---
+title: ""
+format:
+  html:
+    anchor-sections: false
+---
+
+
 <div class="intro-section">
-  <h0>Open Writing Evaluation Canada<h0>
   <h1></h1>
+  <h2>Open Writing Evaluations</h2>
 </div>
 
 <div class="content-section">
-  <h2>Al-based GEC with Linguistically-Informed Error Typology</h2>
-  <p>Our goal: revolutionze Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
+  <h3>AI-based GEC with Linguistically-Informed Error Typology ... </h3>
+  <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
 </div>
