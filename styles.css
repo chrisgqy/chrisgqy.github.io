@@ -4,7 +4,6 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Arial, Sans-Serif;
-  text-decoration: none; /* Remove text decoration from any elements */
 }
 
 .intro-section {
@@ -12,14 +11,14 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background: url('img/background1.jpg') no-repeat center center fixed;
   background-size: cover;
   color: white;
   text-align: center;
 }
 
 h1 {
-  font-size: 10rem; /* Larger font size for the main title */
+  font-size: 3rem; /* Larger font size for the main title */
   margin: 0;
 }
 
@@ -29,7 +28,7 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: black; /* Distinct background color */
+  background: url('img/background2.jpg'); /* Ensure a distinct background color separation */
   color: white;
   text-align: center;
   padding: 2em;
@@ -37,17 +36,11 @@ h1 {
 
 h2 {
   margin: 0;
-  font-size: 2rem; /* Slightly larger font size for the secondary title */
+  font-size: 2rem; /* Slightly larger font size for secondary title */
 }
 
 p {
   margin-top: 1em;
   font-size: 1.2rem;
-  max-width: 800px; /* Optional: maintain content width readability */
-}
-
-/* Ensure all anchors have no default styling */
-a {
-  color: inherit; /* Inherits font color from parent */
-  text-decoration: none; /* Removes underlining */
+  max-width: 800px; /* Optional: to maintain content width */
 }
