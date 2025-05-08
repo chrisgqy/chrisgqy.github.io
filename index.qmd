@@ -1,21 +1,24 @@
 ---
-title: "ABC Oriental"
 format:
   html:
+    page-layout: full
     theme: none
     css: styles.css
     toc: false
+    self-contained: false
+engine: knitr
 ---
 
-<!-- Hero Section -->
-<section class="hero-section">
+```{=html}
+<!-- Hero Section (Company Name) -->
+<section class="hero-section" style="background-image: url('hero-bg.jpg');">
   <div class="hero-text">
     <h1>ABC Oriental</h1>
   </div>
 </section>
 
-<!-- Info Section with Parallax -->
-<section class="info-section">
+<!-- Parallax Info Section -->
+<section class="info-section" style="background-image: url('info-bg.jpg');">
   <div class="info-text">
     <h2>AI-based GEC with Linguistically-Informed Error Typology</h2>
     <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
