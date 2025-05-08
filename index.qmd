@@ -1,17 +1,23 @@
 ---
-title: ""
+title: "ABC Oriental"
 format:
   html:
-    anchor-sections: false
+    theme: none
+    css: styles.css
+    toc: false
 ---
 
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="hero-text">
+    <h1>ABC Oriental</h1>
+  </div>
+</section>
 
-<div class="intro-section">
-  <h1></h1>
-  <h2>Open Writing Evaluations</h2>
-</div>
-
-<div class="content-section">
-  <h3>AI-based GEC with Linguistically-Informed Error Typology ... </h3>
-  <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
-</div>
+<!-- Info Section with Parallax -->
+<section class="info-section">
+  <div class="info-text">
+    <h2>AI-based GEC with Linguistically-Informed Error Typology</h2>
+    <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
+  </div>
+</section>
