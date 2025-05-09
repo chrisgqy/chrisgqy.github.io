@@ -1,26 +1,21 @@
 ---
+title: ""
 format:
   html:
+    anchor-sections: false
     page-layout: full
-    theme: none
+    margin: 0
     css: styles.css
-    toc: false
-    self-contained: false
-engine: knitr
+    theme: none  # This removes default theme styling
 ---
 
-```{=html}
-<!-- Hero Section (Company Name) -->
-<section class="hero-section" style="background-image: url('hero-bg.jpg');">
-  <div class="hero-text">
-    <h1>ABC Oriental</h1>
-  </div>
-</section>
 
-<!-- Parallax Info Section -->
-<section class="info-section" style="background-image: url('info-bg.jpg');">
-  <div class="info-text">
-    <h2>AI-based GEC with Linguistically-Informed Error Typology</h2>
-    <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
-  </div>
-</section>
+<div class="intro-section">
+  <h1></h1>
+  <h2>Open Writing Evaluations</h2>
+</div>
+
+<div class="content-section">
+  <h3>AI-based GEC with Linguistically-Informed Error Typology ... </h3>
+  <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
+</div>
