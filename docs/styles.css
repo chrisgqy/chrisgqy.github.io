@@ -1,3 +1,4 @@
+/* Keep your existing reset styles */
 * {
   margin: 0;
   padding: 0;
@@ -13,32 +14,26 @@ body, html {
   font-family: Arial, Sans-Serif;
 }
 
-.quarto-title-block {
-  margin: 0;
-  padding: 0;
+/* Modify the navbar styles */
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 9999 !important; /* Make sure navbar is on top */
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  padding: 1rem !important;
+  width: 100% !important;
 }
 
-.content {
-  padding: 0 !important;
-  max-width: none !important;
-}
-
-/* Override Quarto's default container */
-#quarto-content,
-.quarto-container,
-.quarto-title-block,
-main {
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-
+/* Modify your sections to be below navbar */
 .intro-section {
+  position: relative;
+  z-index: 1; /* Lower than navbar */
   height: 100vh;
-  width: 100vw; /* Use viewport width */
+  width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-top: 60px; /* Space for navbar */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,20 +42,15 @@ main {
   background-position: center;
   color: white;
   text-align: center;
-  position: relative; /* Add this */
-  left: 0; /* Add this */
-  right: 0; /* Add this */
-}
-h1 {
-  font-size: 3rem; /* Larger font size for the main title */
-  margin: 0;
 }
 
 .content-section {
+  position: relative;
+  z-index: 1; /* Lower than navbar */
   height: 100vh;
-  width: 100vw; /* Use viewport width */
+  width: 100vw;
   margin: 0;
-  padding: 0;
+  padding-top: 60px; /* Space for navbar */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,28 +60,48 @@ h1 {
   background-position: center;
   color: white;
   text-align: center;
-  position: relative; /* Add this */
-  left: 0; /* Add this */
-  right: 0; /* Add this */
-}
-.page-columns {
-  display: block !important;
-  padding: 0 !important;
-  margin: 0 !important;
 }
 
+/* Additional navbar styling */
+.navbar-brand {
+  color: white !important;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.1rem !important;
+  margin-right: 1rem !important;
+}
+
+.nav-link:hover {
+  color: #cccccc !important;
+}
+
+/* Keep your existing heading styles */
+h1 {
+  font-size: 3rem; /* Larger font size for the main title */
+  margin: 0;
+}
 h2 {
   margin: 0;
   font-size: 4rem; /* Slightly larger font size for secondary title */
 }
-
 h3 {
   margin: 0;
   font-size: 2.2rem; /* Slightly larger font size for secondary title */
 }
-
 p {
   margin-top: 1em;
   font-size: 1.5rem;
   max-width: 800px; /* Optional: to maintain content width */
+}
+
+/* Override any Quarto-specific container styles */
+#quarto-content,
+.quarto-container,
+.quarto-title-block,
+main {
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }

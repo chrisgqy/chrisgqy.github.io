@@ -4,11 +4,15 @@ format:
   html:
     anchor-sections: false
     page-layout: full
-    margin: 0
-    css: styles.css
-    theme: none  # This removes default theme styling
+    theme: none
+website:
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
 ---
-
 
 <div class="intro-section">
   <h1></h1>
