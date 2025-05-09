@@ -4,14 +4,16 @@ format:
   html:
     anchor-sections: false
     page-layout: full
-    theme: none
+    theme: darkly  # Or any other bootstrap theme
+    css: styles.css  # Correct way to include custom CSS
 website:
   navbar:
+    background: primary
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - href: about.qmd
-        text: About
+      - text: "Home"
+        href: index.qmd
+      - about.qmd 
 ---
 
 <div class="intro-section">
