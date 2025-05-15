@@ -1,0 +1,27 @@
+---
+title: ""
+format:
+  html:
+    anchor-sections: false
+    page-layout: full
+    theme: darkly  # Or any other bootstrap theme
+    css: styles.css  # Correct way to include custom CSS
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - about.qmd 
+---
+
+<div class="intro-section">
+  <h1></h1>
+  <h2>Open Writing Evaluations</h2>
+</div>
+
+<div class="content-section">
+  <h3>AI-based GEC with Linguistically-Informed Error Typology ... </h3>
+  <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
+</div>

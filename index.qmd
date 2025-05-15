@@ -1,11 +1,11 @@
 ---
-title: ""
+title: "Open Writing Evaluations"
 format:
   html:
     anchor-sections: false
     page-layout: full
-    theme: darkly  # Or any other bootstrap theme
-    css: styles.css  # Correct way to include custom CSS
+    theme: darkly
+    css: styles.css
 website:
   navbar:
     background: primary
@@ -13,15 +13,11 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - about.qmd 
+      - about.qmd
 ---
 
-<div class="intro-section">
-  <h1></h1>
-  <h2>Open Writing Evaluations</h2>
-</div>
+<iframe src="intro.html" width="100%" height="300px" style="border:none;"></iframe>
 
-<div class="content-section">
-  <h3>AI-based GEC with Linguistically-Informed Error Typology ... </h3>
-  <p>... that revolutionizes Chinese Grammar Error Correction based on AI-driven linguistic insight.</p>
-</div>
+<hr/>
+
+<iframe src="custom-widget.html" width="100%" height="800px" style="border:none;"></iframe>
