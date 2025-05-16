@@ -4,7 +4,7 @@ format:
   html:
     anchor-sections: false
     page-layout: full
-    theme: darkly
+    theme: none
     css: styles.css
 website:
   navbar:
@@ -16,8 +16,10 @@ website:
       - about.qmd
 ---
 
-<iframe src="intro.html" width="100%" height="300px" style="border:none;"></iframe>
+<div class="frame-container">
+  <iframe src="intro.html" class="fullscreen-frame" id="intro-frame"></iframe>
+</div>
 
-<hr/>
-
-<iframe src="custom-widget.html" width="100%" height="800px" style="border:none;"></iframe>
+<div class="frame-container">
+  <iframe src="custom-widget.html" class="fullscreen-frame" id="widget-frame"></iframe>
+</div>
