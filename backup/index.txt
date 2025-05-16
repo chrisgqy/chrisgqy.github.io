@@ -1,0 +1,27 @@
+---
+title: "OWE"
+format:
+  html:
+    anchor-sections: false
+    page-layout: full
+    theme: none
+    css: styles.css
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - about.qmd
+---
+
+<div class="main-container">
+  <section class="frame-section">
+    <iframe src="intro.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
+  
+  <section class="frame-section">
+    <iframe src="custom-widget.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
+</div>
