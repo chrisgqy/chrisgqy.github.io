@@ -1,25 +1,30 @@
 ---
-title: "Open Writing Evaluations"
 format:
   html:
     anchor-sections: false
     page-layout: full
     theme: none
     css: styles.css
-website:
-  navbar:
-    background: primary
-    search: true
-    left:
-      - text: "Home"
-        href: index.qmd
-      - about.qmd
 ---
 
-<div class="frame-container">
-  <iframe src="intro.html" class="fullscreen-frame" scrolling="no"></iframe>
-</div>
+::: {.navbar}
+::: {.nav-content}
+::: {.nav-title}
+Open Writing Evaluations
+:::
+::: {.nav-links}
+[Home](index.qmd){.active}
+[About](about.qmd)
+:::
+:::
+:::
 
-<div class="frame-container">
-  <iframe src="custom-widget.html" class="fullscreen-frame" scrolling="no"></iframe>
+<div class="main-container">
+  <section class="frame-section">
+    <iframe src="intro.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
+  
+  <section class="frame-section">
+    <iframe src="custom-widget.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
 </div>
