@@ -1,17 +1,25 @@
-/* Reset */
+/* In your styles.css */
+
+html {
+    background-color: #000;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+body {
+    background-color: #000;
+    min-height: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Your existing styles remain the same */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* Navbar styling */
 .navbar {
     position: fixed;
     top: 0;
@@ -26,8 +34,6 @@ html, body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .nav-title {
@@ -41,42 +47,23 @@ html, body {
     margin-left: 2rem;
 }
 
-.nav-links a:hover {
-    color: #ddd;
-}
-
-.nav-links a.active {
-    font-weight: bold;
-}
-
-/* Main container styling */
+/* Frame container */
 .main-container {
-    width: 100%;
-    height: 100%;
-    padding-top: 56px; /* Height of navbar */
-}
-
-/* Section styling */
-.frame-section {
-    width: 100vw;
-    height: 100vh;
     position: relative;
+    top: 0;  /* This is key - align to top */
+    width: 100%;
 }
 
-/* iframe styling */
+.frame-section {
+    height: 100vh;
+    width: 100%;
+}
+
 .fullscreen-frame {
     width: 100%;
-    height: 100%;
+    height: 100vh;  /* Use viewport height */
     border: none;
+    margin-top: -56px;  /* This is the key fix - negative margin to pull up */
     display: block;
 }
 
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
-.frame-section {
-    scroll-snap-align: start;
-}
