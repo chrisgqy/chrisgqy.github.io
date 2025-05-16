@@ -17,9 +17,9 @@ website:
 ---
 
 <div class="frame-container">
-  <iframe src="intro.html" class="fullscreen-frame" id="intro-frame"></iframe>
+  <iframe src="intro.html" class="fullscreen-frame" scrolling="no"></iframe>
 </div>
 
 <div class="frame-container">
-  <iframe src="custom-widget.html" class="fullscreen-frame" id="widget-frame"></iframe>
+  <iframe src="custom-widget.html" class="fullscreen-frame" scrolling="no"></iframe>
 </div>
