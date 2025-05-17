@@ -27,4 +27,8 @@ Open Writing Evaluations
   <section class="frame-section">
     <iframe src="custom-widget.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
   </section>
+  
+  <section class="frame-section">
+    <iframe src="publication-widget.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
 </div>
