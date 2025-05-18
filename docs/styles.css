@@ -25,7 +25,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #181b2e;
     z-index: 1000;
 }
 
@@ -39,6 +39,13 @@ body {
 .nav-title {
     color: white;
     font-size: 1.2rem;
+}
+
+.nav-logo {
+    height: 3rem;  /* Match the font size of nav-title */
+    width: auto;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .nav-links a {
