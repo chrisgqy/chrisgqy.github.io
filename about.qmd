@@ -19,8 +19,8 @@ format:
 :::
 :::
 
-::: {.content-container}
-# About this site
-
-```{r}
-1 + 1
+<div class="main-container">
+  <section class="frame-section">
+    <iframe src="html/about-content.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
+  </section>
+</div>

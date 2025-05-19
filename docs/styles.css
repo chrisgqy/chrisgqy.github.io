@@ -1,4 +1,5 @@
 /* style.css file correponding to index.qmd and about.qmd */
+/* style.css file corresponding to index.qmd and about.qmd */
 
 html {
     background-color: #000;
@@ -18,6 +19,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Particles styling */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #000;
 }
 
 /* Navbar styles */
@@ -89,12 +101,14 @@ body {
 
 /* About page styles */
 .content-container {
+    position: relative;
     max-width: 800px;
-    margin: 100px auto 0;
+    margin: 120px auto 0;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 200;
 }
 
 .content-container h1 {
@@ -104,7 +118,38 @@ body {
     text-align: center;
 }
 
-/* Code chunk styling */
+/* Story styling */
+.story-box {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(24, 27, 46, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story-box h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.story-box h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.story-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #e0e0e0;
+}
+
+/* Code chunk styling (keeping for reference) */
 .cell {
     width: 100%;
     max-width: 600px;
@@ -151,6 +196,23 @@ code {
 
     .content-container h1 {
         font-size: 2rem;
+    }
+
+    .story-box {
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .story-box h2 {
+        font-size: 1.75rem;
+    }
+
+    .story-box h3 {
+        font-size: 1.25rem;
+    }
+
+    .story-box p {
+        font-size: 1rem;
     }
 
     .cell {
