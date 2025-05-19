@@ -1,9 +1,26 @@
 ---
-title: "About"
+format:
+  html:
+    anchor-sections: false
+    page-layout: full
+    theme: none
+    css: styles.css
 ---
 
-About this site
+::: {.navbar}
+::: {.nav-content}
+::: {.nav-title}
+<img src="img/logo_white.png" alt="Logo" class="nav-logo">
+:::
+::: {.nav-links}
+[Home](index.qmd)
+[About](about.qmd){.active}
+:::
+:::
+:::
+
+::: {.content-container}
+# About this site
 
 ```{r}
 1 + 1
-```
