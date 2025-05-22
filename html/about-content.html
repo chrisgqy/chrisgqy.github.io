@@ -1,164 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script>
-        // Verify script loading
-        console.log("Particles.js script tag included");
-    </script>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-            width: 100%;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #000;
-        }
-
-        #particles-js {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #000;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .content {
-            position: relative;
-            z-index: 2;
-            text-align: left;
-            color: white;
-            padding: 20px;
-            width: 100%;
-            max-width: 800px;
-            margin: 50px auto;
-        }
-        
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin: 1.5rem 0 1rem 0;
-            color: #add8e6;
-        }
-        
-        h3 {
-            font-size: 1.5rem;
-            margin: 1.5rem 0 1rem 0;
-            color: #add8e6;
-        }
-        
-        p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 1.5rem;
-            background-color: rgba(24, 27, 46, 0.8);
-            padding: 1.5rem;
-            border-radius: 8px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About</title>
+  <link rel="stylesheet" href="../style.css" />
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 </head>
 <body>
-    <div id="particles-js"></div>
-    <div class="content">
-        <h1>The Digital Dream</h1>
-        <h2>A Tale of Virtual Reality</h2>
-        <p>In the year 2045, Sarah discovered a peculiar glitch in her virtual reality system. The usual crystal-clear simulations began showing tiny fragments of an unknown world—a world that wasn't programmed into any known experience.</p>
-        
-        <h3>The Discovery</h3>
-        <p>What started as mere digital artifacts soon evolved into coherent images, then complete scenes. Sarah found herself witnessing memories that weren't her own, yet felt strangely familiar.</p>
-        
-        <h3>The Reality</h3>
-        <p>As she delved deeper into this mystery, the line between virtual and real began to blur. Was she discovering a new digital dimension, or was reality itself beginning to glitch?</p>
-    </div>
+  <!-- Particle container -->
+  <div id="particles-js"></div>
 
-    <script>
-        // Function to initialize particles
-        function initParticles() {
-            if (typeof particlesJS !== 'undefined') {
-                particlesJS("particles-js", {
-                    "particles": {
-                        "number": {
-                            "value": 100,
-                            "density": {
-                                "enable": true,
-                                "value_area": 800
-                            }
-                        },
-                        "color": {
-                            "value": "#0a192f"  // Dark blue color
-                        },
-                        "shape": {
-                            "type": "circle"
-                        },
-                        "opacity": {
-                            "value": 0.3,
-                            "random": false
-                        },
-                        "size": {
-                            "value": 2,  // Small size
-                            "random": true
-                        },
-                        "line_linked": {
-                            "enable": true,
-                            "distance": 150,
-                            "color": "#0a192f",  // Dark blue color
-                            "opacity": 0.2,
-                            "width": 1
-                        },
-                        "move": {
-                            "enable": true,
-                            "speed": 3,
-                            "direction": "none",
-                            "random": false,
-                            "straight": false,
-                            "out_mode": "out",
-                            "bounce": false
-                        }
-                    },
-                    "interactivity": {
-                        "detect_on": "canvas",
-                        "events": {
-                            "onhover": {
-                                "enable": true,
-                                "mode": "repulse"
-                            },
-                            "onclick": {
-                                "enable": true,
-                                "mode": "push"
-                            },
-                            "resize": true
-                        }
-                    },
-                    "retina_detect": true
-                });
-                console.log("Particles initialized successfully");
-            } else {
-                console.error("particlesJS is not loaded");
-            }
-        }
+  <!-- Main content -->
+  <div class="content">
+    <h1>The Digital Dream</h1>
+    <h2>A Tale of Virtual Reality</h2>
+    <p>In the year 2045, Sarah discovered a peculiar glitch in her virtual reality system. The usual crystal-clear simulations began showing tiny fragments of an unknown world—a world that wasn't programmed into any known experience.</p>
 
-        // Try to initialize immediately
-        initParticles();
+    <h3>The Discovery</h3>
+    <p>What started as mere digital artifacts soon evolved into coherent images, then complete scenes. Sarah found herself witnessing memories that weren't her own, yet felt strangely familiar.</p>
 
-        // If that doesn't work, wait for window load
-        window.addEventListener('load', initParticles);
-    </script>
+    <h3>The Reality</h3>
+    <p>As she delved deeper into this mystery, the line between virtual and real began to blur. Was she discovering a new digital dimension, or was reality itself beginning to glitch?</p>
+  </div>
+
+  <!-- Load config -->
+  <script>
+    particlesJS.load('particles-js', '../assets/particles-fire.json', function() {
+      console.log("🔥 Fire particle config loaded.");
+    });
+  </script>
 </body>
 </html>
