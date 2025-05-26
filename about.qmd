@@ -1,10 +1,9 @@
 ---
 format:
   html:
+    css: styles.css
     anchor-sections: false
     page-layout: full
-    theme: none
-    css: styles.css
 ---
 
 ::: {.navbar}
@@ -19,8 +18,3 @@ format:
 :::
 :::
 
-<div class="main-container">
-  <section class="frame-section">
-    <iframe src="html/about-content.html" class="fullscreen-frame" scrolling="no" frameborder="0"></iframe>
-  </section>
-</div>
